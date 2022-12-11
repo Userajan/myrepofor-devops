@@ -1,0 +1,59 @@
+Create one directory and go inside it
+git init.........................................................<initiallizing a repo>
+touch my file (put some data )
+git status.......................................................<showing the status>
+git add .........................................................<adding the file repo to cache area>
+git commit -m "write message"....................................<massage>
+git status.......................................................<showing the status>
+git log..........................................................<showing all commit and file>
+git log --oneline................................................<showing all commit and file>
+git show (commit-id).............................................<showing all commit and file with commitid>
+git restore<file name>...........................................<to discard changes in working directory>
+git diff<commit no>..<commit no>.................................<shoe difference in both file>
+ 
+git remote add origin <Central URL of git>.......................<add remote repo..>
+git push -u origin master (enter username & password)............<pul code from remote repo>
+git pull -u origin master (enter username & password)............<push code from remote repo>
+
+git branch ......................................................<show branch>
+git branch<branch name>..........................................<add branch>
+git checkout<new branch name>....................................<switch branch>
+git branch -d <branch name>......................................<delete branch>
+git merge <branch name>..........................................<mearge code betn 2 branches>
+
+git conflict-----
+  - When same file having different content in different branches, if you do merge ,conflict occure(Resolve conflict then add commit)
+  - conflict occure whwn you mearge branch
+
+git stashing-----
+  - git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else,
+    and then come back and re-apply them later on.
+
+git stash.........................................................<to stash an item>
+git stash list ...................................................<to see stash items>
+git stash apply stash@{0}.........................................<to apply stash items>..latesh file show 0 and old file 1,2,,3....
+git stash clear...................................................<clear the stath item>
+
+git reset-------(it is used before commit)
+git reset . ........................................................<reset the file to stagging area to working area>
+git reset --soft.............................................................<reset the file to workng area>
+git reset --mixed............................................................<reset the file from stagging area to working area>
+git reset --hard..............................................................<reset the file from local area to staging area to working area>
+
+git revert-------(it is used after commit)
+git revert<commit id>..................................................<undo an existing commit>
+
+Removes untracked files------
+git clean -n.................................(daily run)
+git clean -f.................................(forcefully)
+
+tags-----
+git tag -a <tag name> -m <message><commit id>
+git tag ..................................................................<see list of tag>
+git show<tag name> .......................................................<show particular commit content using tag>
+gittag-d<tag name>........................................................<delete tag>
+
+git clone------
+git clone <url of github repo>
+
+ 
